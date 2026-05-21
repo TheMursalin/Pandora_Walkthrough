@@ -1,5 +1,4 @@
-# Pandora_Walkthrough
-# Pandora Walkthrough (Simple Indian English)
+# Pandora Walkthrough
 
 Hey guys, today I’ll show you how I rooted Pandora from HackTheBox. This machine was rated easy but it had a nice chain – SNMP to find creds, then pivot to a Pandora FMS application, exploit SQL injection or a command injection to get a shell, and finally a PATH hijack on a SUID binary for root. But there’s a twist: the Apache module used in the box blocks SUID from web shells, so we need SSH to pull off the priv esc. Let’s dive in.
 
